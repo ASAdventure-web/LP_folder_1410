@@ -1,0 +1,6 @@
+config\.codekit
+*\.sublime-project
+sftp-config\.json
+
+**/bower_components/*
+**/sass-cache/*
