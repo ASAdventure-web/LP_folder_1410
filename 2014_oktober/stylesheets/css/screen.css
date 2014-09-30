@@ -8,7 +8,6 @@
 /* Language: SASS                                        */
 /*                                                       */
 /*-------------------------------------------------------*/
-
 /* BOWER COMPONENTS */
 /* RESET */
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -231,8 +230,7 @@ figure {
  */
 hr {
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0; }
 
 /**
@@ -338,9 +336,8 @@ input {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -363,7 +360,6 @@ input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -512,6 +508,9 @@ html, body {
 
 /* MODULES */
 /* THEME */
+body {
+  background: url(../../images/background-pattern.jpg); }
+
 #folderWrapper {
   color: #333333;
   font-family: "Myriad Pro", ​ "Open Sans", Helvetica-Neue, ​ Arial, ​ sans-serif !important; }
@@ -526,10 +525,10 @@ html, body {
     color: #333; }
   #folderWrapper .darkGray {
     background: #333333; }
-  #folderWrapper .green {
-    background: #87cb40; }
-  #folderWrapper .orange {
-    background: #ff9531; }
+  #folderWrapper .backupColor {
+    background: #FF9531; }
+  #folderWrapper .main-color {
+    background: #838858; }
   #folderWrapper a {
     color: #efefef;
     text-decoration: none; }
@@ -541,10 +540,8 @@ html, body {
       #folderWrapper .folderHeader {
         display: none !important; } }
     #folderWrapper .folderHeader .boxShadow {
-      -webkit-box-shadow: 0 17px 10px -15px #cccccc;
-              box-shadow: 0 17px 10px -15px #cccccc;
-      -webkit-box-shadow: 0 17px 10px -15px rgba(0, 0, 0, 0.2);
-              box-shadow: 0 17px 10px -15px rgba(0, 0, 0, 0.2); }
+      box-shadow: 0 17px 10px -15px #cccccc;
+      box-shadow: 0 17px 10px -15px rgba(0, 0, 0, 0.2); }
     #folderWrapper .folderHeader .topBar, #folderWrapper .folderHeader .bottomBar {
       width: 100%; }
     #folderWrapper .folderHeader .leftBar, #folderWrapper .folderHeader .centerBar, #folderWrapper .folderHeader .rightBar {
@@ -558,10 +555,8 @@ html, body {
     #folderWrapper .folderHeader .videoPlaceHolder:hover {
       cursor: pointer; }
     #folderWrapper .folderHeader .videoWrapper {
-      -webkit-box-shadow: inset 3px 3px 3px #333333;
-              box-shadow: inset 3px 3px 3px #333333;
-      -webkit-box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2);
-              box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2);
+      box-shadow: inset 3px 3px 3px #333333;
+      box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2);
       position: relative;
       padding-bottom: 52.25%;
       /* 16:9 */
@@ -588,38 +583,32 @@ html, body {
       #folderWrapper .folderHeaderMobi, #folderWrapper .videoPlaceHolderMobile {
         display: none !important; } }
   #folderWrapper .folderNav {
-    background: url(../../images/lightpaperfibers.jpg);
-    -webkit-box-shadow: 0 0 2px #b4b4b4;
-            box-shadow: 0 0 2px #b4b4b4;
-    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-            box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-    margin: 30px auto;
+    margin: 15px auto 30px;
     font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important; }
     #folderWrapper .folderNav li {
-      border-bottom: 1px solid #f1f1f1;
-      border-right: 1px solid #f1f1f1;
-      -webkit-box-sizing: border-box;
-         -moz-box-sizing: border-box;
-              box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
       cursor: pointer;
       display: table-cell;
       float: left;
-      font-size: 1.2em;
+      font-size: 1.0em;
       line-height: 1.2em;
-      text-align: center;
-      width: 33.333333333%;
+      padding: 0 1.16em 0 0.7em;
+      position: relative;
       -webkit-transition: border .3s ease-in-out;
               transition: border .3s ease-in-out; }
-      #folderWrapper .folderNav li:nth-child(3n+3) {
-        border-right: none; }
-      #folderWrapper .folderNav li:nth-child(1n+7) {
-        border-bottom: none; }
       #folderWrapper .folderNav li .navLink {
         color: #5B3516;
         display: block;
-        padding: 1em 0;
+        padding: .8em 0 .1em;
         text-decoration: none;
         text-transform: capitalize; }
+        #folderWrapper .folderNav li .navLink:after {
+          color: #5B3516;
+          content: "/";
+          position: absolute;
+          top: 30%;
+          right: 0; }
         @media only screen and (max-width: 633.33333px) {
           #folderWrapper .folderNav li .navLink {
             font-size: .8em;
@@ -634,26 +623,20 @@ html, body {
         #folderWrapper .folderNav li {
           font-size: .95em; } }
     #folderWrapper .folderNav li:hover a {
+      color: #838858; }
+    #folderWrapper .folderNav li:hover a.backup-color {
       color: #FF9531; }
-    #folderWrapper .folderNav li:hover a.groen {
-      color: #87CB40; }
     #folderWrapper .folderNav li.active a {
-      background: url(../../images/corner_orange.png) no-repeat top right;
-      -webkit-background-size: 15.64103% 15.64103%;
-              background-size: 15.64103%;
-      color: #FF9531; }
+      border-bottom: 2px solid #838858;
+      color: #838858; }
     #folderWrapper .folderNav li.active a.groen {
-      background: url(../../images/corner_green.png) no-repeat top right;
-      -webkit-background-size: 15.64103% 15.64103%;
-              background-size: 15.64103%;
       color: #87CB40; }
     @media only screen and (max-width: 633.33333px) {
       #folderWrapper .folderNav li a .vertical {
         line-height: 3em; } }
   #folderWrapper .folderItem {
     background: url(../../images/lightpaperfibers.jpg);
-    -webkit-box-shadow: 0 0 2px #b4b4b4;
-            box-shadow: 0 0 2px #b4b4b4;
+    box-shadow: 0 0 2px #b4b4b4;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 0 2px #b4b4b4;
     -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
@@ -661,10 +644,8 @@ html, body {
     color: #666666;
     font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important; }
   #folderWrapper .product img {
-    -webkit-box-shadow: 0 1px 0 #e7e7e7;
-            box-shadow: 0 1px 0 #e7e7e7;
-    -webkit-box-shadow: 0 1px 0 rgba(91, 53, 21, 0.1);
-            box-shadow: 0 1px 0 rgba(91, 53, 21, 0.1);
+    box-shadow: 0 1px 0 #e7e7e7;
+    box-shadow: 0 1px 0 rgba(91, 53, 21, 0.1);
     height: auto;
     width: 100%; }
   @media only screen and (max-width: 633.33333px) {

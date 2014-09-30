@@ -6,8 +6,9 @@
 
 // COLORS
 $darkGray: #333333;
-$green: #87CB40;
-$orange: #FF9531;
+// $backupColor: #87CB40;
+$mainColor: #838858;
+$backupColor: #FF9531;
 
 // FONTS
 
@@ -15,7 +16,9 @@ $fontstack1: "Myriad Pro",​ "Open Sans", Helvetica-Neue,​ Arial,​ sans-ser
 $fontstack2: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
 
 //GENERAL
-
+body{
+	background: url(../../images/background-pattern.jpg);
+}
 
 #folderWrapper{
 // BACKGROUNDS
@@ -23,6 +26,7 @@ $fontstack2: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucid
 	//background: url(../../images/tileable_wood_texture.jpg);
 	// box-shadow: 0 0 5px #cccccc;
 	// box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	//background: url(../../images/background-pattern.jpg);
 	color: #333333;
 	font-family: $fontstack1;
 
@@ -44,12 +48,12 @@ $fontstack2: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucid
 		background: $darkGray;
 	}
 
-	.green{
-		background: $green;
+	.backupColor{
+		background: $backupColor;
 	}
 
-	.orange{
-		background: $orange;
+	.main-color{
+		background: $mainColor;
 	}
 
 	a{
@@ -134,40 +138,52 @@ $fontstack2: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucid
 
 // FOLDERNAV
 	.folderNav{
-		background: url(../../images/lightpaperfibers.jpg);
-		box-shadow: 0 0 2px #b4b4b4;
-		box-shadow: 0 0 2px rgba(0,0,0,0.3);
-		margin: 30px auto;
+		//background: url(../../images/lightpaperfibers.jpg);
+		//box-shadow: 0 0 2px #b4b4b4;
+		//box-shadow: 0 0 2px rgba(0,0,0,0.3);
+		margin: 15px auto 30px;
 		font-family: $fontstack2;
 
 		li{
-			border-bottom: 1px solid #f1f1f1;
-			border-right: 1px solid #f1f1f1;
+			//border-bottom: 1px solid #f1f1f1;
+			//border-right: 1px solid #f1f1f1;
 			box-sizing: border-box; 
 			cursor: pointer;
 			display: table-cell;
 			float: left;
-			font-size: 1.2em;
+			font-size: 1.0em;
 			line-height: 1.2em;
-			text-align: center;
-			width: 33.333333333%;
+			padding: 0 1.16em 0 0.7em;
+			position: relative;
+			//text-align: center;
+			//width: 33.333333333%;
 			//margin: 0.9375em .875em;
 			transition: border .3s ease-in-out;
 
-			&:nth-child(3n+3){
-				border-right: none;
-			}
+			
 
-			&:nth-child(1n+7){
-				border-bottom: none;
-			}
+			// &:nth-child(3n+3){
+			// 	border-right: none;
+			// }
+
+			// &:nth-child(1n+7){
+			// 	border-bottom: none;
+			// }
 
 			.navLink{
 				color: #5B3516;
 				display: block;
-				padding: 1em 0;
+				padding: .8em 0 .1em;
 				text-decoration: none;
 				text-transform: capitalize;
+
+				&:after{
+					color: #5B3516;
+					content: "/";
+					position: absolute;
+						top: 30%;
+						right: 0;
+				}
 
 				@media only screen and (max-width: $breakPoint2){
 					font-size: .8em;
@@ -194,23 +210,24 @@ $fontstack2: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucid
 
 		li:hover a{
 			//border-bottom: 3px solid #FE9122;
-			color: #FF9531;
+			color: $mainColor;
 		}
 
-		li:hover a.groen{
+		li:hover a.backup-color{
 			//border-bottom: 3px solid #FE9122;
-			color: #87CB40;
+			color: $backupColor;
 		}
 
 		li.active a{
-			background: url(../../images/corner_orange.png) no-repeat top right;
-			background-size: percentage(61px / 390px);
-			color: #FF9531;
+			//background: url(../../images/corner_mainColor.png) no-repeat top right;
+			//background-size: percentage(61px / 390px);
+			border-bottom: 2px solid $mainColor;
+			color: $mainColor;
 		}
 
 		li.active a.groen{
-			background: url(../../images/corner_green.png) no-repeat top right;
-			background-size: percentage(61px / 390px);
+			//background: url(../../images/corner_backupColor.png) no-repeat top right;
+			//background-size: percentage(61px / 390px);
 			color: #87CB40;
 		}
 
