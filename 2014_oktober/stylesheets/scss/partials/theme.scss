@@ -170,20 +170,28 @@ body{
 			// 	border-bottom: none;
 			// }
 
+			&:after{
+				color: #5B3516;
+				content: "";
+				font-family: "FontAwesome";
+				font-size: 9px;
+				position: absolute;
+					top: 30%;
+					right: 0;
+			}
+
+			&:last-child{
+				&:after{
+					content: "";
+				}
+			}
+
 			.navLink{
 				color: #5B3516;
 				display: block;
 				padding: .8em 0 .1em;
 				text-decoration: none;
 				text-transform: capitalize;
-
-				&:after{
-					color: #5B3516;
-					content: "/";
-					position: absolute;
-						top: 30%;
-						right: 0;
-				}
 
 				@media only screen and (max-width: $breakPoint2){
 					font-size: .8em;
@@ -277,8 +285,9 @@ body{
 	
 // PRICETAG
 
-	.priceTag{
-		border: 1px solid #efefef;
+	.priceTag, .priceTag2{
+		border: 1px solid #dcdcdc;
+		border: 1px solid rgba(255,255,255,0.4);
 		color: #fcfcfc;
 		font-family: $fontstack1;
 		text-align: center;
@@ -290,16 +299,22 @@ body{
 
 		.priceTag_top{
 			background: $darkGray;
-			border-bottom: 1px solid #fefefe;
+			border-bottom: 1px solid #dcdcdc;
+			border-bottom: 1px solid rgba(255,255,255,0.4);
 			color: #fcfcfc;
 			font-size: .7em;
 		}
 
 		.priceTag_bottom{
+			box-shadow: inset 0 0 15px #454545;
+			box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
 			color: #fcfcfc;
 			font-size: 1.8em;
 			font-weight: bold;
 			line-height: .8em;
+			padding-bottom: .3em;
+			text-shadow: 1px 1px 1px #454545;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 
 			@media only screen and(max-width: $breakPoint2){
 				font-size: 1.3em;
@@ -327,6 +342,11 @@ body{
 			font-size: .6em;
 			font-weight: normal;
 			margin-right: .3em;
+		}
+
+		.hidden-comma{
+			display: none;
+			font-size: 0;
 		}
 
 		.superscript{

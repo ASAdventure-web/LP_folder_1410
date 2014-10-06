@@ -506,6 +506,11 @@ html, body {
   bottom: 10px;
   right: 8px; }
 
+.priceTag2 {
+  position: absolute;
+  bottom: 10px;
+  left: 8px; }
+
 /* MODULES */
 /* THEME */
 body {
@@ -597,18 +602,22 @@ body {
       position: relative;
       -webkit-transition: border .3s ease-in-out;
               transition: border .3s ease-in-out; }
+      #folderWrapper .folderNav li:after {
+        color: #5B3516;
+        content: "";
+        font-family: "FontAwesome";
+        font-size: 9px;
+        position: absolute;
+        top: 30%;
+        right: 0; }
+      #folderWrapper .folderNav li:last-child:after {
+        content: ""; }
       #folderWrapper .folderNav li .navLink {
         color: #5B3516;
         display: block;
         padding: .8em 0 .1em;
         text-decoration: none;
         text-transform: capitalize; }
-        #folderWrapper .folderNav li .navLink:after {
-          color: #5B3516;
-          content: "/";
-          position: absolute;
-          top: 30%;
-          right: 0; }
         @media only screen and (max-width: 633.33333px) {
           #folderWrapper .folderNav li .navLink {
             font-size: .8em;
@@ -656,44 +665,54 @@ body {
       display: none; } }
   #folderWrapper .hiddenLook {
     display: none; }
-  #folderWrapper .priceTag {
-    border: 1px solid #efefef;
+  #folderWrapper .priceTag, #folderWrapper .priceTag2 {
+    border: 1px solid #dcdcdc;
+    border: 1px solid rgba(255, 255, 255, 0.4);
     color: #fcfcfc;
     font-family: "Myriad Pro", ​ "Open Sans", Helvetica-Neue, ​ Arial, ​ sans-serif !important;
     text-align: center;
     text-transform: uppercase; }
-    #folderWrapper .priceTag .priceTag_top, #folderWrapper .priceTag .priceTag_bottom {
+    #folderWrapper .priceTag .priceTag_top, #folderWrapper .priceTag .priceTag_bottom, #folderWrapper .priceTag2 .priceTag_top, #folderWrapper .priceTag2 .priceTag_bottom {
       padding: .45em .5em .15em; }
-    #folderWrapper .priceTag .priceTag_top {
+    #folderWrapper .priceTag .priceTag_top, #folderWrapper .priceTag2 .priceTag_top {
       background: #333333;
-      border-bottom: 1px solid #fefefe;
+      border-bottom: 1px solid #dcdcdc;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
       color: #fcfcfc;
       font-size: .7em; }
-    #folderWrapper .priceTag .priceTag_bottom {
+    #folderWrapper .priceTag .priceTag_bottom, #folderWrapper .priceTag2 .priceTag_bottom {
+      box-shadow: inset 0 0 15px #454545;
+      box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
       color: #fcfcfc;
       font-size: 1.8em;
       font-weight: bold;
-      line-height: .8em; }
+      line-height: .8em;
+      padding-bottom: .3em;
+      text-shadow: 1px 1px 1px #454545;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
       @media only screen and (max-width: 633.33333px) {
-        #folderWrapper .priceTag .priceTag_bottom {
+        #folderWrapper .priceTag .priceTag_bottom, #folderWrapper .priceTag2 .priceTag_bottom {
           font-size: 1.3em; } }
-    #folderWrapper .priceTag .largeText {
+    #folderWrapper .priceTag .largeText, #folderWrapper .priceTag2 .largeText {
       color: #fcfcfc;
       font-size: 1.7em;
       font-weight: bold; }
       @media only screen and (max-width: 633.33333px) {
-        #folderWrapper .priceTag .largeText {
+        #folderWrapper .priceTag .largeText, #folderWrapper .priceTag2 .largeText {
           font-size: 1.3em; } }
-    #folderWrapper .priceTag .initialPrice {
+    #folderWrapper .priceTag .initialPrice, #folderWrapper .priceTag2 .initialPrice {
       color: #fcfcfc;
       margin-top: 4px;
       text-decoration: line-through; }
-    #folderWrapper .priceTag .currency {
+    #folderWrapper .priceTag .currency, #folderWrapper .priceTag2 .currency {
       color: #fcfcfc;
       font-size: .6em;
       font-weight: normal;
       margin-right: .3em; }
-    #folderWrapper .priceTag .superscript {
+    #folderWrapper .priceTag .hidden-comma, #folderWrapper .priceTag2 .hidden-comma {
+      display: none;
+      font-size: 0; }
+    #folderWrapper .priceTag .superscript, #folderWrapper .priceTag2 .superscript {
       color: #fcfcfc;
       font-size: .6em;
       position: relative;

@@ -3,7 +3,7 @@
     var fashion = "?fashion";
     var junior = "?junior";
     var outdoor = "?outdoor";
-    var fietsen = "?fietsen";
+    var bike = "?bike";
     var jackWolfskin = "?jackWolfskin";
     var lookbook = "?lookbook";
     var energie = "?energie";
@@ -13,8 +13,8 @@
     var testArray = location.search.split("&");
     var testParam = testArray[0];
 
-    var paramArray = ["?schoenen", "?fashion", "?junior", "?outdoor", "?fietsen", "?jackWolfskin", "?energie"];
-    var classArray = [".schoenen", ".fashion", ".junior", ".outdoor", ".fietsen", ".jackWolfskin", ".energie"];
+    var paramArray = ["?schoenen", "?fashion", "?junior", "?outdoor", "?bike", "?jackWolfskin", "?energie"];
+    var classArray = [".schoenen", ".fashion", ".junior", ".outdoor", ".bike", ".jackWolfskin", ".energie"];
 
     // // URL PARAMETER
     // function filter(paramArray, classArray){
@@ -39,7 +39,7 @@
     // filter();
 
     if (testParam === schoenen) {
-      $(".fashion, .junior, .outdoor, .fietsen, .actie, .energie, .lookbook .hiddenLook").hide();
+      $(".fashion, .junior, .outdoor, .bike, .jackWolfskin, .energie, .lookbook .hiddenLook").hide();
       $(".schoenen").show();
       $(".hiddenLook").hide();
       $("li#schoenen").addClass("active");
@@ -50,7 +50,7 @@
         onLayout();
       });
     } else if (testParam === fashion) {
-      $(".schoenen, .junior, .outdoor, .fietsen, .actie, .energie, .lookbook, .hiddenLook").hide();
+      $(".schoenen, .junior, .outdoor, .bike, .jackWolfskin, .energie, .lookbook, .hiddenLook").hide();
       $(".fashion").show();
       $(".hiddenLook").hide();
       $("li#fashion").addClass("active");
@@ -61,7 +61,7 @@
         onLayout();
       });
     } else if (testParam === junior) {
-      $(".schoenen, .fashion, .outdoor, .fietsen, .actie, .energie, .lookbook, .hiddenLook").hide();
+      $(".schoenen, .fashion, .outdoor, .bike, .jackWolfskin, .energie, .lookbook, .hiddenLook").hide();
       $(".junior").show();
       $(".hiddenLook").hide();
       $("li#junior").addClass("active");
@@ -72,7 +72,7 @@
         onLayout();
       });
     } else if (testParam === outdoor) {
-      $(".schoenen, .fashion, .junior, .fietsen, .actie, .energie, .lookbook, .hiddenLook").hide();
+      $(".schoenen, .fashion, .junior, .bike, .jackWolfskin, .energie, .lookbook, .hiddenLook").hide();
       $(".outdoor").show();
       $("li#outdoor").addClass("active");
       window.location.hash = navFix;
@@ -81,10 +81,10 @@
         msnry.layout();
         onLayout();
       });
-    } else if (testParam === fietsen) {
-      $(".schoenen, .fashion, .junior, .outdoor, .actie, .energie, .lookbook, .hiddenLook").hide();
-      $(".fietsen").show();
-      $("#fietsen").addClass("active");
+    } else if (testParam === bike) {
+      $(".schoenen, .fashion, .junior, .outdoor, .jackWolfskin, .energie, .lookbook, .hiddenLook").hide();
+      $(".bike").show();
+      $("#bike").addClass("active");
       window.location.hash = navFix;
 
       imagesLoaded(container, function() {
@@ -92,8 +92,8 @@
         onLayout();
       });
     } else if (testParam === jackWolfskin) {
-      $(".schoenen, .fashion, .junior, .outdoor, .fietsen, .energie, .lookbook, .sfeer, .hiddenLook").hide();
-      $(".actie").show();
+      $(".schoenen, .fashion, .junior, .outdoor, .bike, .energie, .lookbook, .sfeer, .hiddenLook").hide();
+      $(".jackWolfskin").show();
       $("#jackWolfskin").addClass("active");
       window.location.hash = navFix;
 
@@ -102,7 +102,7 @@
         onLayout();
       });
     } else if (testParam === lookbook) {
-      $(".schoenen, .fashion, .junior, .outdoor, .fietsen, .energie, .actie, .sfeer").hide();
+      $(".schoenen, .fashion, .junior, .outdoor, .bike, .energie, .jackWolfskin, .sfeer").hide();
       $(".lookbook").show();
       $(".hiddenLook").show();
       $("#lookbook").addClass("active");
@@ -113,7 +113,7 @@
         onLayout();
       });
     } else if (testParam === energie) {
-      $(".schoenen, .fashion, .junior, .outdoor, .fietsen, .actie, .lookbook, .hiddenLook").hide();
+      $(".schoenen, .fashion, .junior, .outdoor, .bike, .jackWolfskin, .lookbook, .hiddenLook").hide();
       $(".energie").show();
       $(".hiddenLook").hide();
       $("#energie").addClass("active");
@@ -124,7 +124,7 @@
         onLayout();
       });
     } else {
-      $(".schoenen, .fashion, .junior, .outdoor, .fietsen, .actie, .energie, .lookbook").show();
+      $(".schoenen, .fashion, .junior, .outdoor, .bike, .jackWolfskin, .energie, .lookbook").show();
       $(".hiddenLook").hide();
       $("#alleFolderProducten").addClass("active");
 
@@ -138,7 +138,7 @@
 
 
     $("#schoenen").click(function() {
-      // $(".fashion, .junior, .outdoor, .fietsen, .actie, .energie, .lookbook").hide();
+      // $(".fashion, .junior, .outdoor, .bike, .actie, .energie, .lookbook").hide();
       // $(".schoenen").show();
       // $(this).siblings().removeClass("active");
       // $(this).addClass("active");
@@ -151,7 +151,7 @@
     });
 
     $("#fashion").click(function() {
-      // $(".schoenen, .junior, .outdoor, .fietsen, .actie, .energie, .lookbook").hide();
+      // $(".schoenen, .junior, .outdoor, .bike, .actie, .energie, .lookbook").hide();
       // $(".fashion").show();
       // $(this).siblings().removeClass("active");
       // $(this).addClass("active");
@@ -164,7 +164,7 @@
     });
 
     $("#junior").click(function() {
-      // $(".schoenen, .fashion, .outdoor, .fietsen, .actie, .energie, .lookbook").hide();
+      // $(".schoenen, .fashion, .outdoor, .bike, .actie, .energie, .lookbook").hide();
       // $(".junior").show();
       // $(this).siblings().removeClass("active");
       // $(this).addClass("active");
@@ -177,7 +177,7 @@
     });
 
     $("#outdoor").click(function() {
-      // $(".schoenen, .fashion, .junior, .fietsen, .actie, .energie, .lookbook").hide();
+      // $(".schoenen, .fashion, .junior, .bike, .actie, .energie, .lookbook").hide();
       // $(".outdoor").show();
       // $(this).siblings().removeClass("active");
       // $(this).addClass("active");
@@ -189,12 +189,12 @@
       });
     });
 
-    $("#fietsen").click(function() {
+    $("#bike").click(function() {
       // $(".schoenen, .fashion, .junior, .outdoor, .actie, .energie, .lookbook").hide();
-      // $(".fietsen").show();
+      // $(".bike").show();
       // $(this).siblings().removeClass("active");
       // $(this).addClass("active");
-      location.search = fietsen;
+      location.search = bike;
 
       imagesLoaded(container, function() {
         msnry.layout();
@@ -203,7 +203,7 @@
     });
 
     $("#jackWolfskin").click(function() {
-      // $(".schoenen, .fashion, .junior, .outdoor, .fietsen, .energie, .lookbook, .sfeer").hide();
+      // $(".schoenen, .fashion, .junior, .outdoor, .bike, .energie, .lookbook, .sfeer").hide();
       // $(".actie").show();
       // $(this).siblings().removeClass("active");
       // $(this).addClass("active");
@@ -216,7 +216,7 @@
     });
 
     $("#lookbook").click(function() {
-      // $(".schoenen, .fashion, .junior, .outdoor, .fietsen, .energie, .actie, .sfeer").hide();
+      // $(".schoenen, .fashion, .junior, .outdoor, .bike, .energie, .actie, .sfeer").hide();
       // $(".lookbook").show();
       // $(".hidden").show();
       // $(this).siblings().removeClass("active");
@@ -230,7 +230,7 @@
     });
 
     $("#energie").click(function() {
-      // $(".schoenen, .fashion, .junior, .outdoor, .fietsen, .actie, .lookbook").hide();
+      // $(".schoenen, .fashion, .junior, .outdoor, .bike, .actie, .lookbook").hide();
       // $(".energie").show();
       // $(this).siblings().removeClass("active");
       // $(this).addClass("active");
@@ -243,7 +243,7 @@
     });
 
     $("#alleFolderProducten").click(function() {
-      // $(".schoenen, .fashion, .junior, .outdoor, .fietsen, .actie, .energie, .lookbook").show();
+      // $(".schoenen, .fashion, .junior, .outdoor, .bike, .actie, .energie, .lookbook").show();
       // $(this).siblings().removeClass("active");
       // $(this).addClass("active");
       location.search = "";
