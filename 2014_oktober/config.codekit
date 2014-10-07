@@ -4311,10 +4311,10 @@
 		},
 	"\/javascript\/filtering.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/javascript\/filtering.js",
-		"outputAbbreviatedPath": "\/javascript\/min\/filtering-ck.js",
+		"outputAbbreviatedPath": "\/javascript\/min\/filtering-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -4456,14 +4456,8 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/javascript\/filtering.js",
-			"position": 1,
-			"type": 1
-			},
-		{
-			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/javascript\/lazy_load.js",
-			"position": 2,
+			"position": 1,
 			"type": 1
 			}
 		]
