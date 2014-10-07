@@ -2027,15 +2027,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/folder_EN.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/folder_EN.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/folder_FR.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4445,7 +4436,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Kristof Hermans",
+"lastSavedByUser": "Pieter De Wachter",
 "manualImportLinks": {
 	"\/javascript\/config.js": [
 		{
