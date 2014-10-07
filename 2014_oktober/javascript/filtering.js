@@ -39,9 +39,9 @@
     // filter();
 
     if (testParam === schoenen) {
-      $(".fashion, .junior, .outdoor, .bike, .jackWolfskin, .energie, .lookbook .hiddenLook").hide();
+      $(".fashion, .junior, .outdoor, .bike, .jackWolfskin, .energie, .lookbook").hide();
       $(".schoenen").show();
-      $(".hiddenLook").hide();
+      
       $("li#schoenen").addClass("active");
       window.location.hash = navFix;
 
@@ -50,9 +50,9 @@
         onLayout();
       });
     } else if (testParam === fashion) {
-      $(".schoenen, .junior, .outdoor, .bike, .jackWolfskin, .energie, .lookbook, .hiddenLook").hide();
+      $(".schoenen, .junior, .outdoor, .bike, .jackWolfskin, .energie, .lookbook").hide();
       $(".fashion").show();
-      $(".hiddenLook").hide();
+      
       $("li#fashion").addClass("active");
       window.location.hash = navFix;
 
@@ -61,9 +61,9 @@
         onLayout();
       });
     } else if (testParam === junior) {
-      $(".schoenen, .fashion, .outdoor, .bike, .jackWolfskin, .energie, .lookbook, .hiddenLook").hide();
+      $(".schoenen, .fashion, .outdoor, .bike, .jackWolfskin, .energie, .lookbook").hide();
       $(".junior").show();
-      $(".hiddenLook").hide();
+      
       $("li#junior").addClass("active");
       window.location.hash = navFix;
 
@@ -72,7 +72,7 @@
         onLayout();
       });
     } else if (testParam === outdoor) {
-      $(".schoenen, .fashion, .junior, .bike, .jackWolfskin, .energie, .lookbook, .hiddenLook").hide();
+      $(".schoenen, .fashion, .junior, .bike, .jackWolfskin, .energie, .lookbook").hide();
       $(".outdoor").show();
       $("li#outdoor").addClass("active");
       window.location.hash = navFix;
@@ -82,7 +82,7 @@
         onLayout();
       });
     } else if (testParam === bike) {
-      $(".schoenen, .fashion, .junior, .outdoor, .jackWolfskin, .energie, .lookbook, .hiddenLook").hide();
+      $(".schoenen, .fashion, .junior, .outdoor, .jackWolfskin, .energie, .lookbook").hide();
       $(".bike").show();
       $("#bike").addClass("active");
       window.location.hash = navFix;
@@ -92,7 +92,7 @@
         onLayout();
       });
     } else if (testParam === jackWolfskin) {
-      $(".schoenen, .fashion, .junior, .outdoor, .bike, .energie, .lookbook, .sfeer, .hiddenLook").hide();
+      $(".schoenen, .fashion, .junior, .outdoor, .bike, .energie, .lookbook, .sfeer").hide();
       $(".jackWolfskin").show();
       $("#jackWolfskin").addClass("active");
       window.location.hash = navFix;
@@ -104,7 +104,6 @@
     } else if (testParam === lookbook) {
       $(".schoenen, .fashion, .junior, .outdoor, .bike, .energie, .jackWolfskin, .sfeer").hide();
       $(".lookbook").show();
-      $(".hiddenLook").show();
       $("#lookbook").addClass("active");
       window.location.hash = navFix;
 
@@ -113,9 +112,9 @@
         onLayout();
       });
     } else if (testParam === energie) {
-      $(".schoenen, .fashion, .junior, .outdoor, .bike, .jackWolfskin, .lookbook, .hiddenLook").hide();
+      $(".schoenen, .fashion, .junior, .outdoor, .bike, .jackWolfskin, .lookbook").hide();
       $(".energie").show();
-      $(".hiddenLook").hide();
+      
       $("#energie").addClass("active");
       window.location.hash = navFix;
 
@@ -125,7 +124,7 @@
       });
     } else {
       $(".schoenen, .fashion, .junior, .outdoor, .bike, .jackWolfskin, .energie, .lookbook").show();
-      $(".hiddenLook").hide();
+      
       $("#alleFolderProducten").addClass("active");
 
       imagesLoaded(container, function() {
@@ -254,7 +253,7 @@
       });
     });
 
-    // $(".hiddenLook").hide();
+    // 
 
     imagesLoaded(container, function() {
       msnry.layout();
