@@ -633,8 +633,11 @@ body {
         text-transform: capitalize; }
         @media only screen and (max-width: 633.3333333333px) {
           #folderWrapper .folderNav li .navLink {
-            font-size: .8em;
+            font-size: .9em;
             height: 3em; } }
+        @media only screen and (max-width: 767px) {
+          #folderWrapper .folderNav li .navLink {
+            padding-left: 10px; } }
       @media only screen and (max-width: 1199px) {
         #folderWrapper .folderNav li {
           font-size: 1em; } }
@@ -659,7 +662,7 @@ body {
     font-size: 95%; }
     @media only screen and (max-width: 1199px) {
       #folderWrapper .navFixFr {
-        font-size: 89%; } }
+        font-size: 83%; } }
     @media only screen and (max-width: 979px) {
       #folderWrapper .navFixFr {
         font-size: 79%; } }
