@@ -336,8 +336,7 @@ input {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -360,6 +359,7 @@ input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -425,7 +425,7 @@ html, body {
   max-width: 1170px;
   padding-bottom: 50px;
   width: 100%; }
-  @media only screen and (max-width: 633.33333px) {
+  @media only screen and (max-width: 633.3333333333px) {
     #folderWrapper {
       width: 99%; } }
   #folderWrapper .clearfix:after {
@@ -433,24 +433,24 @@ html, body {
     content: "";
     display: table; }
   #folderWrapper .gridSizer {
-    width: 23.07692%; }
-    @media only screen and (max-width: 966.66667px) {
+    width: 23.0769230769%; }
+    @media only screen and (max-width: 966.6666666667px) {
       #folderWrapper .gridSizer {
-        width: 31.26437%; } }
-    @media only screen and (max-width: 633.33333px) {
+        width: 31.2643678161%; } }
+    @media only screen and (max-width: 633.3333333333px) {
       #folderWrapper .gridSizer {
-        width: 47.63158%; } }
+        width: 47.6315789474%; } }
     @media only screen and (max-width: 300px) {
       #folderWrapper .gridSizer {
         width: 100%; } }
   #folderWrapper .gutterSizer {
-    width: 2.5641%; }
-    @media only screen and (max-width: 966.66667px) {
+    width: 2.5641025641%; }
+    @media only screen and (max-width: 966.6666666667px) {
       #folderWrapper .gutterSizer {
-        width: 3.10345%; } }
-    @media only screen and (max-width: 633.33333px) {
+        width: 3.1034482759%; } }
+    @media only screen and (max-width: 633.3333333333px) {
       #folderWrapper .gutterSizer {
-        width: 4.73684%; } }
+        width: 4.7368421053%; } }
     @media only screen and (max-width: 300px) {
       #folderWrapper .gutterSizer {
         width: 10%; } }
@@ -469,9 +469,9 @@ html, body {
 .folderItem {
   border-collapse: collapse;
   float: left;
-  margin-right: 2.5641%;
+  margin-right: 2.5641025641%;
   margin-bottom: 30px;
-  width: 23.07692%; }
+  width: 23.0769230769%; }
   .folderItem .product {
     position: relative;
     width: 100%; }
@@ -482,14 +482,14 @@ html, body {
     position: absolute;
     top: 10px;
     left: 16px; }
-  @media only screen and (max-width: 966.66667px) {
+  @media only screen and (max-width: 966.6666666667px) {
     .folderItem {
-      margin-right: 3.10345%;
-      width: 31.26437%; } }
-  @media only screen and (max-width: 633.33333px) {
+      margin-right: 3.1034482759%;
+      width: 31.2643678161%; } }
+  @media only screen and (max-width: 633.3333333333px) {
     .folderItem {
-      margin-right: 4.73684%;
-      width: 47.63158%; } }
+      margin-right: 4.7368421053%;
+      width: 47.6315789474%; } }
   @media only screen and (max-width: 300px) {
     .folderItem {
       margin-right: 10%;
@@ -499,7 +499,7 @@ html, body {
   margin-right: 0; }
 
 .twoCol {
-  width: 48.71795%; }
+  width: 48.7179487179%; }
 
 .priceTag {
   position: absolute;
@@ -519,7 +519,7 @@ body {
 #folderWrapper {
   color: #333333;
   font-family: "Myriad Pro", ​ "Open Sans", Helvetica-Neue, ​ Arial, ​ sans-serif !important; }
-  @media only screen and (max-width: 966.66667px) {
+  @media only screen and (max-width: 966.6666666667px) {
     #folderWrapper {
       font-size: .8em; } }
   #folderWrapper .white {
@@ -552,9 +552,9 @@ body {
     #folderWrapper .folderHeader .leftBar, #folderWrapper .folderHeader .centerBar, #folderWrapper .folderHeader .rightBar {
       float: left; }
     #folderWrapper .folderHeader .leftBar, #folderWrapper .folderHeader .rightBar {
-      width: 22.64957%; }
+      width: 22.6495726496%; }
     #folderWrapper .folderHeader .centerBar {
-      width: 54.70085%; }
+      width: 54.7008547009%; }
     #folderWrapper .folderHeader img {
       max-width: 100%; }
     #folderWrapper .folderHeader .videoPlaceHolder:hover {
@@ -589,10 +589,9 @@ body {
         display: none !important; } }
   #folderWrapper .folderNav {
     margin: 15px auto 30px;
-    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important; }
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Bodoni Ornaments", "Apple Color Emoji", Monaco, "Courier New", Courier, monospace !important; }
     #folderWrapper .folderNav li {
-      -moz-box-sizing: border-box;
-           box-sizing: border-box;
+      box-sizing: border-box;
       cursor: pointer;
       display: table-cell;
       float: left;
@@ -600,8 +599,7 @@ body {
       line-height: 1.2em;
       padding: 0 1.16em 0 0.7em;
       position: relative;
-      -webkit-transition: border .3s ease-in-out;
-              transition: border .3s ease-in-out; }
+      transition: border .3s ease-in-out; }
       #folderWrapper .folderNav li:after {
         color: #5B3516;
         content: "";
@@ -618,7 +616,7 @@ body {
         padding: .8em 0 .1em;
         text-decoration: none;
         text-transform: capitalize; }
-        @media only screen and (max-width: 633.33333px) {
+        @media only screen and (max-width: 633.3333333333px) {
           #folderWrapper .folderNav li .navLink {
             font-size: .8em;
             height: 3em; } }
@@ -640,7 +638,7 @@ body {
       color: #838858; }
     #folderWrapper .folderNav li.active a.groen {
       color: #87CB40; }
-    @media only screen and (max-width: 633.33333px) {
+    @media only screen and (max-width: 633.3333333333px) {
       #folderWrapper .folderNav li a .vertical {
         line-height: 3em; } }
   #folderWrapper .folderItem {
@@ -651,16 +649,16 @@ body {
     -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
     -webkit-border-radius: 1px;
     color: #666666;
-    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important; }
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Bodoni Ornaments", "Apple Color Emoji", Monaco, "Courier New", Courier, monospace !important; }
   #folderWrapper .product img {
     box-shadow: 0 1px 0 #e7e7e7;
     box-shadow: 0 1px 0 rgba(91, 53, 21, 0.1);
     height: auto;
     width: 100%; }
-  @media only screen and (max-width: 633.33333px) {
+  @media only screen and (max-width: 633.3333333333px) {
     #folderWrapper .sfeer, #folderWrapper .brand_logo {
       display: none !important; } }
-  @media only screen and (max-width: 633.33333px) {
+  @media only screen and (max-width: 633.3333333333px) {
     #folderWrapper .lookbook {
       display: none; } }
   #folderWrapper .hiddenLook {
@@ -690,14 +688,14 @@ body {
       padding-bottom: .3em;
       text-shadow: 1px 1px 1px #454545;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
-      @media only screen and (max-width: 633.33333px) {
+      @media only screen and (max-width: 633.3333333333px) {
         #folderWrapper .priceTag .priceTag_bottom, #folderWrapper .priceTag2 .priceTag_bottom {
           font-size: 1.3em; } }
     #folderWrapper .priceTag .largeText, #folderWrapper .priceTag2 .largeText {
       color: #fcfcfc;
       font-size: 1.7em;
       font-weight: bold; }
-      @media only screen and (max-width: 633.33333px) {
+      @media only screen and (max-width: 633.3333333333px) {
         #folderWrapper .priceTag .largeText, #folderWrapper .priceTag2 .largeText {
           font-size: 1.3em; } }
     #folderWrapper .priceTag .initialPrice, #folderWrapper .priceTag2 .initialPrice {
@@ -727,7 +725,7 @@ body {
         font-size: 1.2em;
         font-weight: 100;
         margin-bottom: .4em; }
-        @media only screen and (max-width: 633.33333px) {
+        @media only screen and (max-width: 633.3333333333px) {
           #folderWrapper .description .title_block h3, #folderWrapper .description .title_block h3 a {
             font-size: 1.2em; } }
       #folderWrapper .description .title_block h4, #folderWrapper .description .title_block h4 a {
@@ -740,7 +738,7 @@ body {
       font-size: .9em;
       padding-top: 1.2em;
       padding-bottom: 1.2em; }
-      @media only screen and (max-width: 966.66667px) {
+      @media only screen and (max-width: 966.6666666667px) {
         #folderWrapper .description p, #folderWrapper .description p a {
           line-height: 1.3em; } }
       #folderWrapper .description p .end_block, #folderWrapper .description p a .end_block {
