@@ -600,9 +600,13 @@ body {
       padding: 0 1.16em 0 0.7em;
       position: relative;
       transition: border .3s ease-in-out; }
+      @media ony screen and (max-width: 979px) {
+        #folderWrapper .folderNav li {
+          font-size: 1.2em; } }
       @media only screen and (max-width: 767px) {
         #folderWrapper .folderNav li {
-          font-size: 1.05em; } }
+          font-size: 1.05em;
+          width: 50%; } }
       #folderWrapper .folderNav li:after {
         color: #5B3516;
         content: "";
@@ -634,9 +638,6 @@ body {
       @media only screen and (max-width: 1199px) {
         #folderWrapper .folderNav li {
           font-size: .9em; } }
-      @media only screen and (max-width: 979px) {
-        #folderWrapper .folderNav li {
-          font-size: .78em; } }
     #folderWrapper .folderNav li:hover a {
       color: #838858; }
     #folderWrapper .folderNav li:hover a.backup-color {
