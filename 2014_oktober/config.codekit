@@ -4126,6 +4126,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/images\/producten\/the_north_face_glacier_fleece_dames.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26820,
+		"inputAbbreviatedPath": "\/images\/producten\/the_north_face_glacier_fleece_dames.jpg",
+		"outputAbbreviatedPath": "\/images\/producten\/the_north_face_glacier_fleece_dames.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/producten\/the_north_face_resolve_insulated_jas.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
