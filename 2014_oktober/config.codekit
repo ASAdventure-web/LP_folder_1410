@@ -2036,15 +2036,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/folder_NL.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/folder_NL.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/images\/background-pattern.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -4131,17 +4122,6 @@
 		"initialSize": 24283,
 		"inputAbbreviatedPath": "\/images\/producten\/the_north_face_chimborazo_fleece.jpg",
 		"outputAbbreviatedPath": "\/images\/producten\/the_north_face_chimborazo_fleece.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/images\/producten\/the_north_face_glacier_fleece_dames.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 27280,
-		"inputAbbreviatedPath": "\/images\/producten\/the_north_face_glacier_fleece_dames.jpg",
-		"outputAbbreviatedPath": "\/images\/producten\/the_north_face_glacier_fleece_dames.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
