@@ -591,7 +591,6 @@ body {
     margin: 15px auto 30px;
     font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important; }
     #folderWrapper .folderNav li {
-      border-bottom: 2px solid transparent;
       box-sizing: border-box;
       cursor: pointer;
       display: table-cell;
@@ -617,6 +616,11 @@ body {
             display: none; } }
       #folderWrapper .folderNav li:last-child:after {
         content: ""; }
+      #folderWrapper .folderNav li a {
+        border-bottom: 2px solid transparent; }
+        @media only screen and (max-width: 767) {
+          #folderWrapper .folderNav li a {
+            border-bottom: 0; } }
       #folderWrapper .folderNav li .navLink {
         color: #5B3516;
         display: block;
@@ -640,6 +644,11 @@ body {
     #folderWrapper .folderNav li.active a {
       border-bottom: 2px solid #838858;
       color: #838858; }
+      @media only screen and (max-width: 767px) {
+        #folderWrapper .folderNav li.active a {
+          background: #838858;
+          border-bottom: 0;
+          color: #ffffff; } }
     #folderWrapper .folderNav li.active a.groen {
       color: #87CB40; }
     @media only screen and (max-width: 633.3333333333px) {

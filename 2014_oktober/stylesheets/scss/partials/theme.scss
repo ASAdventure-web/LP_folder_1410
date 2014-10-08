@@ -135,7 +135,6 @@ body{
 		font-family: $fontstack2;
 
 		li{
-			border-bottom: 2px solid transparent;
 			box-sizing: border-box; 
 			cursor: pointer;
 			display: table-cell;
@@ -167,6 +166,14 @@ body{
 			&:last-child{
 				&:after{
 					content: "";
+				}
+			}
+
+			a{
+				border-bottom: 2px solid transparent;
+
+				@media only screen and(max-width: 767) {
+					border-bottom: 0;
 				}
 			}
 
@@ -203,6 +210,12 @@ body{
 		li.active a{
 			border-bottom: 2px solid $mainColor;
 			color: $mainColor;
+
+			@media only screen and(max-width: 767px){
+				background: $mainColor;
+				border-bottom: 0;
+				color: #ffffff;
+			}
 		}
 
 		li.active a.groen{
