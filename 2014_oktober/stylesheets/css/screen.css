@@ -591,6 +591,7 @@ body {
     margin: 15px auto 30px;
     font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important; }
     #folderWrapper .folderNav li {
+      border-bottom: 2px solid transparent;
       box-sizing: border-box;
       cursor: pointer;
       display: table-cell;
@@ -600,6 +601,9 @@ body {
       padding: 0 1.16em 0 0.7em;
       position: relative;
       transition: border .3s ease-in-out; }
+      @media only screen and (max-width: 767px) {
+        #folderWrapper .folderNav li {
+          font-size: 1.05em; } }
       #folderWrapper .folderNav li:after {
         color: #5B3516;
         content: "";
@@ -608,12 +612,15 @@ body {
         position: absolute;
         top: 30%;
         right: 0; }
+        @media only screen and (max-width: 767px) {
+          #folderWrapper .folderNav li:after {
+            display: none; } }
       #folderWrapper .folderNav li:last-child:after {
         content: ""; }
       #folderWrapper .folderNav li .navLink {
         color: #5B3516;
         display: block;
-        padding: .8em 0 .1em;
+        padding: .8em 0 0;
         text-decoration: none;
         text-transform: capitalize; }
         @media only screen and (max-width: 633.3333333333px) {
@@ -643,6 +650,15 @@ body {
         line-height: 3em; } }
   #folderWrapper .navFixFr {
     font-size: 95%; }
+    @media only screen and (max-width: 1199px) {
+      #folderWrapper .navFixFr {
+        font-size: 89%; } }
+    @media only screen and (max-width: 979px) {
+      #folderWrapper .navFixFr {
+        font-size: 79%; } }
+    @media only screen and (max-width: 979px) {
+      #folderWrapper .navFixFr {
+        font-size: 79%; } }
   #folderWrapper .folderItem {
     background: url(../../images/lightpaperfibers.jpg);
     box-shadow: 0 0 2px #b4b4b4;
@@ -672,6 +688,9 @@ body {
     font-family: "Myriad Pro", ​ "Open Sans", Helvetica-Neue, ​ Arial, ​ sans-serif !important;
     text-align: center;
     text-transform: uppercase; }
+    @media only screen and (max-width: 979px) {
+      #folderWrapper .priceTag, #folderWrapper .priceTag2 {
+        font-size: .7em; } }
     #folderWrapper .priceTag .priceTag_top, #folderWrapper .priceTag .priceTag_bottom, #folderWrapper .priceTag2 .priceTag_top, #folderWrapper .priceTag2 .priceTag_bottom {
       padding: .45em .5em .15em; }
     #folderWrapper .priceTag .priceTag_top, #folderWrapper .priceTag2 .priceTag_top {
@@ -740,8 +759,9 @@ body {
       font-size: .9em;
       padding-top: 1.2em;
       padding-bottom: 1.2em; }
-      @media only screen and (max-width: 966.6666666667px) {
+      @media only screen and (max-width: 979px) {
         #folderWrapper .description p, #folderWrapper .description p a {
+          font-size: .8em;
           line-height: 1.3em; } }
       #folderWrapper .description p .end_block, #folderWrapper .description p a .end_block {
         background: #5b3516;

@@ -147,6 +147,7 @@ body{
 		li{
 			//border-bottom: 1px solid #f1f1f1;
 			//border-right: 1px solid #f1f1f1;
+			border-bottom: 2px solid transparent;
 			box-sizing: border-box; 
 			cursor: pointer;
 			display: table-cell;
@@ -160,7 +161,9 @@ body{
 			//margin: 0.9375em .875em;
 			transition: border .3s ease-in-out;
 
-			
+			@media only screen and(max-width: 767px){
+				font-size: 1.05em;
+			}
 
 			// &:nth-child(3n+3){
 			// 	border-right: none;
@@ -178,6 +181,10 @@ body{
 				position: absolute;
 					top: 30%;
 					right: 0;
+
+				@media only screen and(max-width: 767px){
+					display: none;
+				}
 			}
 
 			&:last-child{
@@ -189,7 +196,7 @@ body{
 			.navLink{
 				color: #5B3516;
 				display: block;
-				padding: .8em 0 .1em;
+				padding: .8em 0 0;
 				text-decoration: none;
 				text-transform: capitalize;
 
@@ -248,6 +255,18 @@ body{
 
 	.navFixFr{
 		font-size: 95%;
+
+		@media only screen and(max-width: 1199px){
+			font-size: 89%;
+		}
+
+		@media only screen and(max-width: 979px){
+			font-size: 79%;
+		}
+
+		@media only screen and(max-width: 979px){
+			font-size: 79%;
+		}
 	}
 
 // FOLDERITEM
@@ -296,6 +315,10 @@ body{
 		font-family: $fontstack1;
 		text-align: center;
 		text-transform: uppercase;
+
+		@media only screen and(max-width: 979px){
+			font-size: .7em;
+		}
 
 		.priceTag_top, .priceTag_bottom{
 			padding: .45em .5em .15em;
@@ -399,7 +422,8 @@ body{
 			padding-top: 1.2em;
 			padding-bottom: 1.2em;
 
-			@media only screen and(max-width: $breakPoint1){
+			@media only screen and(max-width: 979px){
+				font-size: .8em;
 				line-height: 1.3em;
 			}
 
