@@ -641,6 +641,8 @@ body {
     @media only screen and (max-width: 633.3333333333px) {
       #folderWrapper .folderNav li a .vertical {
         line-height: 3em; } }
+  #folderWrapper .navFixFr {
+    font-size: 95%; }
   #folderWrapper .folderItem {
     background: url(../../images/lightpaperfibers.jpg);
     box-shadow: 0 0 2px #b4b4b4;
