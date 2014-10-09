@@ -177,7 +177,7 @@ body{
 			a{
 				border-bottom: 2px solid transparent;
 
-				@media only screen and(max-width: 767) {
+				@media only screen and(max-width: 767px) {
 					border-bottom: 0;
 				}
 			}
