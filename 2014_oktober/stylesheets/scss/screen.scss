@@ -9,10 +9,11 @@
 /*-------------------------------------------------------*/
 
 /* BOWER COMPONENTS */
+@import "../../bower_components/modularized-normalize-scss/_normalize";
+
 /* RESET */
 
 @import "partials/reset.scss";
-@import "../../bower_components/modularized-normalize-scss/_normalize";
 
 /* GRID */
 

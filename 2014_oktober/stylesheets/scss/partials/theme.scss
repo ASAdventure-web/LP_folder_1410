@@ -11,7 +11,7 @@ $backupColor: #FF9531;
 
 // FONTS
 
-$fontstack1: "Myriad Pro",​ "Open Sans", Helvetica-Neue,​ Arial,​ sans-serif !important;
+$fontstack1: "Open Sans", "Myriad Pro", Helvetica-Neue,​ Arial,​ sans-serif !important;
 $fontstack2: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !important;
 
 //GENERAL
@@ -23,6 +23,7 @@ body{
 // BACKGROUNDS
 	color: #333333;
 	font-family: $fontstack1;
+	font-size: 114%;
 
 	@media only screen and(max-width: $breakPoint1){
 		font-size: .8em;
@@ -375,6 +376,7 @@ body{
 				color: #5b3516 !important;
 				font-size: 1.2em;
 				font-weight: 100;
+				line-height: 1.2em;
 				margin-bottom: .4em;
 
 				@media only screen and (max-width: $breakPoint2){
